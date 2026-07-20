@@ -25,6 +25,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .gc-author.mengu { color: #d4a040; }
 .gc-author.giggs { color: #50b8d8; }
 .gc-author.cr { color: #50b090; }
+.gc-author.togo { color: #e07040; }
 .gc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 9px 11px; }
 .col-head { font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 5px; }
 .col-in .col-head { color: #4caf6b; }
@@ -52,9 +53,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <body>
 <div class="top-bar">
   <h1>Eldrazi Tron SB Guide</h1>
-  <div class="subtitle">Mengucci / Lucas Giggs / Cardsrealm &middot; + full guide library below</div>
+  <div class="subtitle">Togores (Jul 2026) / Mengucci / Lucas Giggs / Cardsrealm &middot; + full guide library below</div>
 </div>
 <div class="banner">Eldrazi Tron sideboards are mostly a Karn, the Great Creator wishboard (12+ one-of artifacts you tutor mid-game) — so most "sideboarding" is just 3 Disruptor Flutes coming in vs. combo. Knowing WHAT to wish for matters more than swaps; notes below cover that.</div>
+<div class="banner" style="border-top:1px solid #1e1a28;">
+<b style="color:#e07040;">Togores' July 2026 list notes:</b> Glaring Fleshraker is BACK post-Phlage-ban (2 copies — bridge tool; 3 possible). Off Sire of Seven Deaths earlier due to Solitude, but Boros/Prowess resurgence brought it back. 3 Torpor Orb (great vs. Blink/Boros; stops own TKS/Fleshraker — hence only 2 Rakers). No Chalice maindeck ("medium... better if open decklists"). Warping Wail down to 1. Basic Swamp re-added (Ponza). Breaker of Creation = only real Ponza tech.
+</div>
 
 <!-- Boros Energy -->
 <div class="mu open">
@@ -62,6 +66,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span class="mu-name">vs. Boros Energy</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">3</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Thought-Knot Seer</div>
+        </div>
+      </div>
+      <div class="gc-note">Torpor Orb has been amazing vs. Boros — stops Guide of Souls/Ocelot Pride triggers (and your own TKS/Fleshraker, another reason he only runs 2 Fleshrakers).</div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="nosb">Don't sideboard anything in.</div>
@@ -87,6 +104,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="mu-body">
     <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Wastes</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
       <div class="gc-head"><span class="gc-author giggs">Lucas Giggs</span></div>
       <div class="nosb">Prose plan (no fixed numbers):</div>
       <div class="gc-note">More dangerous than Boros — faster clock, limited answers to Slickshot Show-Off. Early interaction is critical; stabilize with blockers and survive to your 7-drops. Post-board: Ulamog is simply too slow — cut it even though it hurts Ugin's Labyrinth ramp. Side in low-cost cards that buy time or disrupt explosive starts. You won't have time to fetch expensive Karn silver bullets — trim accordingly.</div>
@@ -100,6 +129,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span class="mu-name">vs. Eldrazi (mirror / Ramp)</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+          <div class="c in"><span class="qi">1</span>Extinguisher Battleship</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">Eldrazi Tron mirror.</div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
@@ -121,12 +166,53 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Gruul Eldrazi Ramp</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
 <!-- Affinity -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Affinity</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Extinguisher Battleship</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>Devourer of Destiny</div>
+        </div>
+      </div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
@@ -147,12 +233,53 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Boros Ponza</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Dismember</div>
+        </div>
+      </div>
+      <div class="gc-note">"Probably one we cannot beat... that matchup is hopeless." Only good card found: Breaker of Creation — if you resolve it they struggle (mostly if they run Wrath of God). Togores re-added a basic Swamp partly for Ponza. If your meta is Ponza-heavy, he would not play Eldrazi Tron at all.</div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
 <!-- Amulet Titan -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Amulet Titan</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Torpor Orb</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Dismember</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
@@ -179,6 +306,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <span class="mu-name">vs. Esper Goryo's</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>Grafdigger's Cage</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Dismember</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+        </div>
+      </div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
@@ -207,6 +350,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="mu-body">
     <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">2</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+        </div>
+      </div>
+      <div class="gc-note">Blue Belcher. If they play the non-Trainer list (you see their deck G1 if you lose), keep 1 Sire + 1 Warping Wail instead.</div>
+    </div>
+
+    <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
@@ -234,6 +395,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="mu-body">
     <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Grafdigger's Cage</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
@@ -257,6 +434,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="mu-body">
     <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Grafdigger's Cage</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
@@ -279,6 +469,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
   <div class="mu-body">
     <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
@@ -294,12 +497,57 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Neobrand</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Dismember</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
 <!-- Living End -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Living End</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+          <div class="c in"><span class="qi">2</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Dismember</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Wastes</div>
+        </div>
+      </div>
+      <div class="gc-note">Sires cut because of Inevitable Betrayal; Stone Brain in for the same reason (they could bring Betrayal in).</div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="gc-cols">
@@ -315,12 +563,74 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Rhinos</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>The Stone Brain</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">Sires cut because of Inevitable Betrayal. (As written this is 1 in / 3 out — wishboard slots shifting; verbatim from the guide.)</div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Dimir Murktide</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
 <!-- Esper/Orzhov Blink -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Esper / Orzhov Blink</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">3</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+          <div class="c out"><span class="q">2</span>Glaring Fleshraker</div>
+        </div>
+      </div>
+      <div class="gc-note">Esper Blink.</div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="nosb">Don't sideboard anything in.</div>
@@ -329,12 +639,69 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Azorius Cat Blink</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">3</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Glaring Fleshraker</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Azorius Control (no Field of Ruin)</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Wastes</div>
+          <div class="c out"><span class="q">3</span>Dismember</div>
+        </div>
+      </div>
+      <div class="gc-note">Stone Brain most often names Consign to Memory.</div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
 <!-- Domain Zoo -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Domain Zoo</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="nosb">Nothing.</div>
+    </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author mengu">Mengucci</span></div>
       <div class="nosb">Don't sideboard anything in.</div>
@@ -370,6 +737,231 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   </div>
 </div>
 
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Yawgmoth</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Sam Combo</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">2</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Wastes</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Simic Ritual</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">3</span>Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Devourer of Destiny</div>
+          <div class="c out"><span class="q">1</span>Warping Wail</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Creativity</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Torpor Orb</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Wastes</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Merfolk</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Mill</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Tormod's Crypt</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+          <div class="c in"><span class="qi">1</span>Trinisphere</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Walking Ballista</div>
+          <div class="c in"><span class="qi">1</span>Extinguisher Battleship</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">1</span>The Filigree Sylex</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">—</span>No fixed cuts</div>
+        </div>
+      </div>
+      <div class="gc-note">"Play a lot of cards and just mull into hands that have lands." Board in the whole toolbox; cuts are flexible.</div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Hollow One</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Grafdigger's Cage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Eldrazi Aggro</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Cityscape Leveler</div>
+          <div class="c in"><span class="qi">1</span>Extinguisher Battleship</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Necrodominance</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">1</span>The Stone Brain</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Guide Library -->
 <div class="lib">
   <h2>&#128218; Every Eldrazi Tron Guide Found (deep search, Jul 2024 &ndash; Jul 2026)</h2>
@@ -383,7 +975,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
   <div class="lib-item">
     <span class="tag paid">PAID</span><span class="tag matrix">VERSIONED SB GUIDES</span>
     <a href="https://metafy.gg/guides/view/modern-eldrazi-tron-guide-with-full-sidebo-2TuLiigv1og">Togores — Modern Eldrazi Tron Guide with full Sideboard Guide (Metafy)</a>
-    <div class="lib-meta">Sep 17, 2025, updated Jul 11 2026 (8 days before this search!) &middot; Metafy supporter tiers $3/$20/$59 per month &middot; 186 purchases, 8.9/10 &middot; Monthly-versioned "Decklist and Sideboard Guide" chapters + primers on card choices (3k words), Karn Wish Board (2.5k), matchups (3.2k), mulligans. Two-time GP winner, most actively maintained guide anywhere. The $3 tier is likely the best paid value in this list.</div>
+    <div class="lib-meta">Sep 17, 2025, updated Jul 11 2026 (8 days before this search!) &middot; Metafy supporter tiers $3/$20/$59 per month &middot; 186 purchases, 8.9/10 &middot; Monthly-versioned "Decklist and Sideboard Guide" chapters + primers on card choices (3k words), Karn Wish Board (2.5k), matchups (3.2k), mulligans. Two-time GP winner, most actively maintained guide anywhere. The $3 tier is likely the best paid value in this list. <b style="color:#e07040;">July 2026 sideboard guide now integrated above.</b></div>
   </div>
 
   <div class="lib-item">
