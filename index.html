@@ -37,6 +37,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .c.out { color: #f5b8b8; }
 .c .q { font-weight: 700; font-size: 11px; color: #e05a5a; margin-right: 3px; }
 .c .qi { font-weight: 700; font-size: 11px; color: #4caf6b; margin-right: 3px; }
+.dl { background:#141414; border:1px solid #1f1f1f; border-radius:7px; margin:10px 12px; overflow:hidden; }
+.dl > summary { list-style:none; cursor:pointer; padding:9px 12px; font-size:12px; font-weight:700; color:#e07040; -webkit-tap-highlight-color:transparent; }
+.dl > summary::-webkit-details-marker { display:none; }
+.dl > summary::after { content:' \25BC'; font-size:9px; color:#555; }
+.dl[open] > summary::after { content:' \25B2'; }
+.dlg { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:2px 12px 12px; }
+.dlg h4 { font-size:10px; letter-spacing:.7px; text-transform:uppercase; color:#8a7a5a; margin-bottom:4px; }
+.dlc { font-size:12px; color:#ddd; line-height:1.55; }
+.dlc span { color:#4caf6b; font-weight:700; margin-right:4px; }
+@media (max-width:520px){ .dlg { grid-template-columns:1fr; } }
 .karnleft { padding: 5px 11px 7px; border-top: 1px solid #1a1a1a; font-size: 11px; color: #8a7f68; line-height: 1.6; }
 .karnleft .lbl2 { font-size: 9px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: #6e6656; margin-right: 5px; }
 .karnleft b { color: #d8c090; font-weight: 600; }
@@ -81,6 +91,50 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 <div class="banner" style="border-top:1px solid #1e1a28;color:#8a7a5a;"><b style="color:#d4a040;">Wishboard blocks</b> (grab order, Chalice X, Flute names, Stone Brain) from the Karn Wishboard Field Guide, July 2026. Card names only &mdash; open that guide for the reasoning. <b style="color:#d4a040;">Chalice counts</b> are maindeck nonland cards at each mana value, averaged over 3 current MTGGoldfish lists per archetype (Scryfall mana values; pitch/dash/flashback/suspend don't change MV; X-spells counted at X=0; split cards at their cheaper half).</div>
 
+<details class="dl" id="togolist">
+  <summary>Togores' actual list &mdash; Metafy Eldrazi Tron, updated 11 Jul 2026</summary>
+  <div class="dlg">
+    <div><h4>Maindeck (60)</h4>
+<div class="dlc"><span>4</span>Urza's Tower</div>
+<div class="dlc"><span>4</span>Urza's Mine</div>
+<div class="dlc"><span>4</span>Urza's Power Plant</div>
+<div class="dlc"><span>4</span>Eldrazi Temple</div>
+<div class="dlc"><span>4</span>Ugin's Labyrinth</div>
+<div class="dlc"><span>1</span>Wastes</div>
+<div class="dlc"><span>1</span>Swamp</div>
+<div class="dlc"><span>4</span>Expedition Map</div>
+<div class="dlc"><span>4</span>Mind Stone</div>
+<div class="dlc"><span>4</span>Devourer of Destiny</div>
+<div class="dlc"><span>4</span>Thought-Knot Seer</div>
+<div class="dlc"><span>2</span>Glaring Fleshraker</div>
+<div class="dlc"><span>2</span>Sire of Seven Deaths</div>
+<div class="dlc"><span>2</span>All Is Dust</div>
+<div class="dlc"><span>4</span>Karn, the Great Creator</div>
+<div class="dlc"><span>4</span>Ugin, Eye of the Storms</div>
+<div class="dlc"><span>4</span>Kozilek's Command</div>
+<div class="dlc"><span>3</span>Dismember</div>
+<div class="dlc"><span>1</span>Warping Wail</div>
+    </div>
+    <div><h4>Sideboard (15)</h4>
+<div class="dlc"><span>3</span>Torpor Orb</div>
+<div class="dlc"><span>1</span>Disruptor Flute</div>
+<div class="dlc"><span>1</span>Chalice of the Void</div>
+<div class="dlc"><span>1</span>Trinisphere</div>
+<div class="dlc"><span>1</span>Ensnaring Bridge</div>
+<div class="dlc"><span>1</span>Liquimetal Coating</div>
+<div class="dlc"><span>1</span>Grafdigger's Cage</div>
+<div class="dlc"><span>1</span>Tormod's Crypt</div>
+<div class="dlc"><span>1</span>Walking Ballista</div>
+<div class="dlc"><span>1</span>The Filigree Sylex</div>
+<div class="dlc"><span>1</span>Cityscape Leveler</div>
+<div class="dlc"><span>1</span>Extinguisher Battleship</div>
+<div class="dlc"><span>1</span>The Stone Brain</div>
+      <div class="dlc" style="color:#6e6656;font-style:italic;margin-top:6px;">
+        Every artifact here is Karn-fetchable, so most of it never gets boarded in.</div>
+    </div>
+  </div>
+</details>
+
 <!-- Boros Energy -->
 <div class="mu open">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
@@ -105,7 +159,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">3</span>Thought-Knot Seer</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Filigree Sylex</b> &middot; <b>Walking Ballista</b> &middot; <b>Chalice of the Void</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Filigree Sylex</b> &middot; <b>Walking Ballista</b> &middot; <b>Chalice of the Void</b></div>
       <div class="gc-note">Torpor Orb has been amazing vs. Boros — stops Guide of Souls/Ocelot Pride triggers (and your own TKS/Fleshraker, another reason he only runs 2 Fleshrakers).</div>
     </div>
 
@@ -185,7 +239,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Wastes</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Trinisphere</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Trinisphere</b></div>
       </div>
 
     <div class="gc">
@@ -253,7 +307,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Liquimetal Coating</b> &middot; <b>Walking Ballista</b> &middot; <b>Chalice of the Void</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Liquimetal Coating</b> &middot; <b>Walking Ballista</b> &middot; <b>Chalice of the Void</b></div>
       <div class="gc-note">Eldrazi Tron mirror.</div>
     </div>
 
@@ -321,7 +375,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Warping Wail</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     
@@ -402,7 +456,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">4</span>Devourer of Destiny</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Filigree Sylex</b> &middot; <b>Trinisphere</b> &middot; <b>Grafdigger's Cage</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Filigree Sylex</b> &middot; <b>Trinisphere</b> &middot; <b>Grafdigger's Cage</b></div>
       </div>
 
     <div class="gc">
@@ -481,7 +535,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">3</span>Dismember</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Liquimetal Coating</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Liquimetal Coating</b> &middot; <b>Ensnaring Bridge</b></div>
       <div class="gc-note">"Probably one we cannot beat... that matchup is hopeless." Only good card found: Breaker of Creation — if you resolve it they struggle (mostly if they run Wrath of God). Togores re-added a basic Swamp partly for Ponza. If your meta is Ponza-heavy, he would not play Eldrazi Tron at all.</div>
     </div>
 
@@ -518,7 +572,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Trinisphere</b> &middot; <b>Liquimetal Coating</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Trinisphere</b> &middot; <b>Liquimetal Coating</b></div>
       </div>
 
     <div class="gc">
@@ -591,7 +645,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Warping Wail</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     <div class="gc">
@@ -746,7 +800,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b></div>
       </div>
 
     <div class="gc">
@@ -809,7 +863,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>All Is Dust</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     <div class="gc">
@@ -871,7 +925,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>All Is Dust</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Extinguisher Battleship</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Extinguisher Battleship</b></div>
       </div>
 
     <div class="gc">
@@ -901,7 +955,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out">Warping Wail</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Stone Brain</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>The Stone Brain</b></div>
       <div class="gc-note">Different list version than the Jul 2026 guide above.</div>
     </div>
 
@@ -965,7 +1019,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Dismember</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     
@@ -1004,7 +1058,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Wastes</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Tormod's Crypt</b></div>
       <div class="gc-note">Sires cut because of Inevitable Betrayal; Stone Brain in for the same reason (they could bring Betrayal in).</div>
     </div>
 
@@ -1105,7 +1159,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Warping Wail</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     
@@ -1159,7 +1213,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>Glaring Fleshraker</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b></div>
       <div class="gc-note">Esper Blink.</div>
     </div>
 
@@ -1179,7 +1233,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1 of 2</span>Chalice of the Void</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b></div>
       <div class="gc-note">Different list version than the Jul 2026 guide above (this one runs maindeck Chalice).</div>
     </div>
 
@@ -1227,7 +1281,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>The Stone Brain</b> &middot; <b>Extinguisher Battleship</b></div>
       </div>
 
     
@@ -1261,7 +1315,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">3</span>Dismember</div>
         </div>
       </div>
-            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Chalice of the Void</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+            <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Chalice of the Void</b></div>
       <div class="gc-note">Stone Brain most often names Consign to Memory.</div>
     </div>
 
@@ -1311,7 +1365,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out">Dismember</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Chalice of the Void</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Chalice of the Void</b></div>
       </div>
 
     
@@ -1341,7 +1395,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
     <div class="gc">
       <div class="gc-head"><span class="gc-author togo">Togores &middot; Jul 2026</span></div>
       <div class="nosb">Nothing.</div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Disruptor Flute</b> &middot; <b>Chalice of the Void</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Disruptor Flute</b> &middot; <b>Chalice of the Void</b></div>
       </div>
 
     <div class="gc">
@@ -1444,7 +1498,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Tormod's Crypt</b> &middot; <b>Walking Ballista</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Tormod's Crypt</b> &middot; <b>Walking Ballista</b></div>
       </div>
 
     
@@ -1476,7 +1530,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Wastes</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Tormod's Crypt</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Grafdigger's Cage</b> &middot; <b>Tormod's Crypt</b></div>
       </div>
 
     
@@ -1621,7 +1675,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>All Is Dust</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Trinisphere</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Ensnaring Bridge</b> &middot; <b>Walking Ballista</b> &middot; <b>Trinisphere</b></div>
       </div>
 
     
@@ -1654,7 +1708,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Walking Ballista</b> &middot; <b>Ensnaring Bridge</b> &middot; <b>Liquimetal Coating</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Walking Ballista</b> &middot; <b>Ensnaring Bridge</b> &middot; <b>Liquimetal Coating</b></div>
       </div>
 
     
@@ -1685,7 +1739,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c out"><span class="q">2</span>All Is Dust</div>
         </div>
       </div>
-          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>Ensnaring Bridge</b> <span class="inf">(board inferred: their own swaps + the 87%+ wishboard core)</span></div>
+          <div class="karnleft"><span class="lbl2">Left in board for Karn</span><b>Trinisphere</b> &middot; <b>Ensnaring Bridge</b></div>
       </div>
 
     
